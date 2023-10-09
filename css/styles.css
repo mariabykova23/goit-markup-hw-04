@@ -425,36 +425,30 @@ a .team-link-item{
 .portfolio-img-text{
   position:relative;
   overflow: hidden;
+  transition:
 }
 
 .portfolio-item-parapraph{
   background-color:#4D5AE5;
   width:360px;
   height:300px;
-  padding-top:40px;
-  padding-left:32px;
-  padding-right:32px;
+  padding: 40px 32px;
   text-align: center;
-}
-
-.portfolio-img-text:hover .portfolio-item-parapraph{
-  transform: translateY(0%);
-  top:0;
-  left:0;
-  max-width: 360px;
-  max-height:300px;
-}
-
-
-
-.portfolio-item-parapraph{
   position: absolute;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: left;
+  transform: translateY(0%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
   color: #F4F4FD;
+}
 
+.portfolio-img-text:hover .portfolio-item-parapraph{
+  top:0;
+  left:0;
+  max-width: 360px;
+  max-height:300px;
 }
 
 .portfolio-subtitle {
@@ -483,6 +477,7 @@ a .team-link-item{
 
 .container-footer {
   max-width: 264px;
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -524,7 +519,6 @@ a .team-link-item{
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
-  gap: 120px;
 }
 
 .footer-social-links-list {
@@ -550,6 +544,7 @@ a .team-link-item{
   align-items: center;
   width: 100%;
   height: 100%;
+  transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link-item:hover,
@@ -558,5 +553,5 @@ a .team-link-item{
 }
 
 .footer-social-links-items{
-  fill:#ffffff
+  fill:#f4f4fd;
 }
