@@ -446,7 +446,7 @@ a .team-link-item{
   color: #F4F4FD;
 }
 
-.portfolio-img-text:hover .portfolio-item-parapraph{
+.portfolio-item:hover .portfolio-item-parapraph{
   transform: translateY(0%);
   top:0px;
 }
